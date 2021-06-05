@@ -422,7 +422,6 @@ app.view("done", async ({ ack, body, view, client }) => {
 
 	// Message the user
 	try {
-		console.log("View Trigger", body.trigger_id);
 		const result = await client.views.open({
 			// Pass the view_id
 			trigger_id: body.trigger_id,
@@ -452,7 +451,7 @@ app.view("done", async ({ ack, body, view, client }) => {
 			},
 		});
 		await client.chat.postMessage({
-			channel: user,
+			channel: user_id,
 			text: "Thank you for your time",
 		});
 		// console.log(result);
