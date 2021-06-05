@@ -618,3 +618,5 @@ const DAYS_OF_THE_WEEK = [
 		value: "sunday",
 	},
 ];
+
+module.exports = receiver;
