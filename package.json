@@ -1,0 +1,17 @@
+{
+  "name": "seren-x",
+  "version": "1.0.0",
+  "description": "A slack bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Solomon Temitayo",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.12"
+  }
+}
