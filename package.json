@@ -4,14 +4,20 @@
   "description": "A slack bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config index.js"
   },
   "author": "Solomon Temitayo",
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^3.3.0",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.12"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4",
+    "supertest": "^6.1.3"
   }
 }
